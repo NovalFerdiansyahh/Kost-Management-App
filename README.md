@@ -14,3 +14,8 @@ Tujuan utama dari proyek ini adalah membangun sebuah aplikasi desktop yang memud
 | Noval Ferdiansyah      | 23SA31A058    | Perancangan Database dan Pemrograman   |
 | Eza Pramudia Ananta    | 23SA31A061    | Pemrograman dan Penulisan Laporan      |
 
+## 🎬 Demo Aplikasi
+
+Klik untuk menonton video demo aplikasi:
+
+🔗 [Tonton di Google Drive](https://drive.google.com/file/d/19_VytL-ptDXnZ0oTzBgqSk_SS-bGYmY-/view?usp=sharing)
