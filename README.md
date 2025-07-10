@@ -9,8 +9,8 @@ Tujuan utama dari proyek ini adalah membangun sebuah aplikasi desktop yang memud
 
 | Nama                   | NIM           | Tugas                                  |
 |------------------------|---------------|----------------------------------------|
-| Dhanny Friansyah       | 23SA31A034    | Desain Formu dan Wireframe             |
-| Ramadlan Jona Syaifudin| 23SA31A052    | Desain Formu dan Wireframe             |
+| Dhanny Friansyah       | 23SA31A034    | Desain Form dan Wireframe              |
+| Ramadlan Jona Syaifudin| 23SA31A052    | Desain Form dan Wireframe              |
 | Noval Ferdiansyah      | 23SA31A058    | Perancangan Database dan Pemrograman   |
 | Eza Pramudia Ananta    | 23SA31A061    | Pemrograman dan Penulisan Laporan      |
 
