@@ -1,4 +1,4 @@
-#KOMA APP
+# KOMA APP
 
 ## Deskripsi Project
 Aplikasi manajemen kost ini dikembangkan sebagai solusi atas permasalahan yang sering dihadapi oleh pemilik atau pengelola kost yang masih menggunakan pencatatan manual. Pencatatan manual sering kali menyebabkan kesalahan, kehilangan data, serta membutuhkan waktu dan tenaga yang lebih banyak. Oleh karena itu, aplikasi ini dirancang untuk membantu mengelola data penghuni, mencatat pembayaran bulanan, memantau status kamar, serta menghasilkan laporan dengan lebih efisien dan akurat.
@@ -13,3 +13,4 @@ Tujuan utama dari proyek ini adalah membangun sebuah aplikasi desktop yang memud
 | Ramadlan Jona Syaifudin| 23SA31A052    | Desain Formu dan Wireframe             |
 | Noval Ferdiansyah      | 23SA31A058    | Perancangan Basis Data dan Pemrograman |
 | Eza Pramudia Ananta    | 23SA31A061    | Pemrograman dan Penulisan Laporan      |
+
