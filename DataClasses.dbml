@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Aplikasi_KOMA" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=PANG\SQLEXPRESS;Initial Catalog=Aplikasi_KOMA;Integrated Security=True;Encrypt=False" SettingsObjectName="WindowsFormsApp1.Properties.Settings" SettingsPropertyName="Aplikasi_KOMAConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Pengguna" Member="Penggunas">
+    <Type Name="Pengguna">
+      <Column Name="ID_Pengguna" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NamaPengguna" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="KataSandi" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Peran" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Penghuni" Member="Penghunis">
+    <Type Name="Penghuni">
+      <Column Name="ID_Penghuni" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nama" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="NoHP" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Alamat" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ID_Kamar" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TanggalMasuk" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="Penghuni_Pembayaran" Member="Pembayarans" ThisKey="ID_Penghuni" OtherKey="ID_Penghuni" Type="Pembayaran" />
+      <Association Name="Kamar_Penghuni" Member="Kamar" ThisKey="ID_Kamar" OtherKey="ID_Kamar" Type="Kamar" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Kamar" Member="Kamars">
+    <Type Name="Kamar">
+      <Column Name="ID_Kamar" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NomorKamar" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Harga" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Association Name="Kamar_Penghuni" Member="Penghunis" ThisKey="ID_Kamar" OtherKey="ID_Kamar" Type="Penghuni" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Backups" Member="Backups">
+    <Type Name="Backup">
+      <Column Name="ID_Backup" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TanggalBackup" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LokasiFile" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Pembayaran" Member="Pembayarans">
+    <Type Name="Pembayaran">
+      <Column Name="ID_Pembayaran" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID_Penghuni" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TanggalBayar" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Jumlah" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Keterangan" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Association Name="Penghuni_Pembayaran" Member="Penghuni" ThisKey="ID_Penghuni" OtherKey="ID_Penghuni" Type="Penghuni" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

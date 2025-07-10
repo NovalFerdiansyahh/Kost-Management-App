@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClasses">
+  <DataContextMoniker Name="/DataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="fec935ef-3285-4c10-b3d6-38d61f9e238b" absoluteBounds="3.375, 1.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClassesDataContext/Pengguna" />
+      <nestedChildShapes>
+        <elementListCompartment Id="51ddbe78-a676-4da1-90cd-716b44c1d22d" absoluteBounds="3.39, 1.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c142aeda-aee7-4edc-9e17-5c2a6d2ce763" absoluteBounds="1.625, 4.125, 2, 1.9631982421875">
+      <DataClassMoniker Name="/DataClassesDataContext/Penghuni" />
+      <nestedChildShapes>
+        <elementListCompartment Id="31074e12-ba98-4093-9e70-0d3c8e4b3085" absoluteBounds="1.6400000000000001, 4.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a6d96bd2-8d42-48e1-9866-3a7981af7aba" absoluteBounds="6.875, 1.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClassesDataContext/Kamar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3ab2e2d7-06fe-4399-abd6-9f2c3b1d9bac" absoluteBounds="6.89, 1.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.28125 : 3.07859537760417); (8.28125 : 6.02329752604167); (3.625 : 6.02329752604167)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Kamar/Kamar_Penghuni" />
+      <nodes>
+        <classShapeMoniker Id="a6d96bd2-8d42-48e1-9866-3a7981af7aba" />
+        <classShapeMoniker Id="c142aeda-aee7-4edc-9e17-5c2a6d2ce763" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e880e25e-d85e-4960-b003-6a867266df07" absoluteBounds="0.5, 1.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DataClassesDataContext/Backup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f8d93837-d697-40aa-82e5-e1eb284b22b8" absoluteBounds="0.51500000000000012, 1.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="91e28808-c023-43ff-a0a0-71a7d6656fbb" absoluteBounds="5.625, 4.125, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DataClassesDataContext/Pembayaran" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dfeed8d4-aa61-4bec-8b0e-96452d1df497" absoluteBounds="5.64, 4.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.625 : 5.01044840494792); (5.625 : 5.01044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Penghuni/Penghuni_Pembayaran" />
+      <nodes>
+        <classShapeMoniker Id="c142aeda-aee7-4edc-9e17-5c2a6d2ce763" />
+        <classShapeMoniker Id="91e28808-c023-43ff-a0a0-71a7d6656fbb" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
